@@ -1,25 +1,23 @@
-/* Custom CSS */
-
 /* Navbar */
 .navbar-custom {
-    background-color: #ffffff; /* Change background to white */
-    padding: 1rem 2rem; /* Adjust padding as needed */
-    box-shadow: none; /* Initially hide the shadow */
-    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+    background-color: #ffffff;
+    padding: 1rem 2rem; 
+    box-shadow: none; 
+    transition: box-shadow 0.3s ease; 
 }
 
 .navbar-custom.shadow-on-scroll {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow at the bottom when scrolled */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .navbar-brand img {
-    max-height: 70px; /* Adjust the max-height as per your preference */
-    width: auto; /* Maintain aspect ratio */
+    max-height: 70px; 
+    width: auto; 
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .nav-link {
-    color: #343a40; /* Change text color to match new background */
+    color: #343a40;
 }
 
 .navbar-custom .navbar-toggler {
@@ -31,24 +29,22 @@
 }
 
 .navbar-custom .nav-link i {
-    color: #343a40; /* Change icon color to match new background */
+    color: #343a40;
 }
 
-/* Nav-link hover effect */
 .navbar-custom .nav-link:hover,
 .navbar-custom .nav-link.active {
-    color: #ffc107; /* Change text color on hover and active */
+    color: #ffc107;
 }
 
-/* Add spacing between nav-links */
 .navbar-custom .navbar-nav .nav-item {
-    margin-right: 10px; /* Adjust margin as needed */
+    margin-right: 10px;
 }
 
 /* Search Form */
 #searchForm {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
+    display: flex; 
+    align-items: center;
     width: 0;
     opacity: 0;
     overflow: hidden;
@@ -56,17 +52,17 @@
 }
 
 #searchForm input {
-    margin-left: 5px; /* Add margin between icon and input */
-    border: 1px solid #ced4da; /* Light border */
-    padding: 0.375rem 0.75rem; /* Adjust padding as needed */
-    border-radius: 0.25rem; /* Rounded corners */
-    outline: none; /* Remove outline on focus */
+    margin-left: 5px; 
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem; 
+    border-radius: 0.25rem; 
+    outline: none; 
 }
 
 #searchForm:not(.d-none) {
     width: 200px;
     opacity: 1;
-    overflow: visible; /* Ensures the input field is visible when expanded */
+    overflow: visible; 
 }
 
 @media (max-width: 767px) {
@@ -75,15 +71,15 @@
     }
 
     #searchForm {
-        width: auto; /* Adjust width to auto for flexible sizing */
+        width: auto; 
     }
 
     #searchForm input {
-        width: 100%; /* Expand input to fill remaining space */
+        width: 100%; 
     }
 
     #searchForm:not(.d-none) {
-        width: auto; /* Adjust width to auto when expanded */
+        width: auto; 
     }
 }
 
@@ -134,7 +130,7 @@
 }
 
 /*--------------------------------------------------------------
-# Global Section Titles
+# global section titles
 --------------------------------------------------------------*/
 .section-title {
     text-align: center;
@@ -155,7 +151,7 @@
   }
 
 /*--------------------------------------------------------------
-# feature-section Section
+# feature-section
 --------------------------------------------------------------*/
 .feature-section {
     background-color: #F4F4F4;
@@ -246,7 +242,7 @@
   }
 
   /*--------------------------------------------------------------
-# Global Footer
+# global footer
 --------------------------------------------------------------*/
 .footer {
     background-color: var(--background-color);
