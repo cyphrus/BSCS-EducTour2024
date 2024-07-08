@@ -1,0 +1,300 @@
+/* Custom CSS */
+
+/* Navbar */
+.navbar-custom {
+    background-color: #ffffff; /* Change background to white */
+    padding: 1rem 2rem; /* Adjust padding as needed */
+    box-shadow: none; /* Initially hide the shadow */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+
+.navbar-custom.shadow-on-scroll {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow at the bottom when scrolled */
+}
+
+.navbar-brand img {
+    max-height: 70px; /* Adjust the max-height as per your preference */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #343a40; /* Change text color to match new background */
+}
+
+.navbar-custom .navbar-toggler {
+    border: none;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(52, 58, 64, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-custom .nav-link i {
+    color: #343a40; /* Change icon color to match new background */
+}
+
+/* Nav-link hover effect */
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: #ffc107; /* Change text color on hover and active */
+}
+
+/* Add spacing between nav-links */
+.navbar-custom .navbar-nav .nav-item {
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+/* Search Form */
+#searchForm {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+#searchForm input {
+    margin-left: 5px; /* Add margin between icon and input */
+    border: 1px solid #ced4da; /* Light border */
+    padding: 0.375rem 0.75rem; /* Adjust padding as needed */
+    border-radius: 0.25rem; /* Rounded corners */
+    outline: none; /* Remove outline on focus */
+}
+
+#searchForm:not(.d-none) {
+    width: 200px;
+    opacity: 1;
+    overflow: visible; /* Ensures the input field is visible when expanded */
+}
+
+@media (max-width: 767px) {
+    .navbar-nav .nav-item {
+        text-align: center;
+    }
+
+    #searchForm {
+        width: auto; /* Adjust width to auto for flexible sizing */
+    }
+
+    #searchForm input {
+        width: 100%; /* Expand input to fill remaining space */
+    }
+
+    #searchForm:not(.d-none) {
+        width: auto; /* Adjust width to auto when expanded */
+    }
+}
+
+/*--------------------------------------------------------------
+# intro section
+--------------------------------------------------------------*/
+.intro-section .btn-get-started {
+    background-color: #ffc107;
+    color: #ffff;
+    border-radius: 30px;
+    padding: 8px 30px;
+    border: 2px solid transparent;
+    transition: 0.3s all ease-in-out;
+    font-size: 14px;
+  }
+
+.intro-section .btn-get-started:hover {
+    border-color: #ffc107;
+    background-color: transparent;
+    color: #ffc107;
+}
+
+.intro-section h1 {
+    color: #343a40; /* Heading color */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.intro-section p {
+    line-height: 1.7;
+    color: #6c757d; /* Paragraph text color */
+}
+
+.intro-section .swiper-pagination {
+    position: absolute;
+    bottom: 30px;
+}
+
+.intro-section .swiper-pagination .swiper-pagination-bullet {
+    margin: 0 5px;
+    background: #ffffff;
+    opacity: 0.3;
+}
+
+.intro-section .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #ffc107;
+    opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+  }
+  
+  .section-title h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  
+  .section-title p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+/*--------------------------------------------------------------
+# feature-section Section
+--------------------------------------------------------------*/
+.feature-section {
+    background-color: #F4F4F4;
+}
+
+.feature-section .title-wrap {
+    padding-bottom: 30px;
+  }
+  
+  .feature-section .content-subtitle {
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: block;
+    color: #ffffff;
+  }
+  
+  .feature-section .content-title {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  
+  .feature-section .post-entry .thumb {
+    margin-bottom: 20px;
+  }
+  
+  .feature-section .post-entry .thumb img {
+    transition: 0.3s all ease;
+  }
+  
+  .feature-section .post-entry .thumb:hover img {
+    opacity: 0.8;
+  }
+  
+  .feature-section .post-entry .meta {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-section .post-entry .meta .cat {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .feature-section .post-entry .meta .date {
+    color: color-mix(in srgb, #000, transparent 25%);
+  }
+  
+  .feature-section .post-entry .post-content {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 30px;
+  }
+  
+  .feature-section .post-entry .post-content h3 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  
+  .feature-section .post-entry .post-content h3 a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .feature-section .post-entry .post-content h3 a:hover {
+    color: #ffc107;
+  }
+  
+  .feature-section .author .pic {
+    flex: 0 0 50px;
+    margin-right: 20px;
+  }
+  
+  .feature-section .author .author-name {
+    line-height: 1.3;
+  }
+  
+  .feature-section .author .author-name strong {
+    color: #000;
+    font-weight: normal;
+  }
+  
+  .feature-section .author .author-name span {
+    font-size: 14px;
+    color: color-mix(in srgb, #000, transparent 25%);
+  }
+
+  /*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.footer {
+    background-color: var(--background-color);
+    color: #000;
+    padding: 50px 50px 20px 50px;
+    font-size: 20px;
+    border-top: 1px solid color-mix(in srgb, #000, transparent 80%);
+  }
+  
+  .footer a {
+    color: #ffff !important;
+  }
+  
+  .footer a:hover {
+    color: #ffc107;
+  }
+  
+  .footer .copyright {
+    margin-top: 50px;
+    position: relative;
+    padding-top: 20px;
+    border-top: 1px solid color-mix(in srgb, #000, transparent 80%);
+  }
+  
+  .footer .copyright p,
+  .footer .copyright .credits {
+    margin: 2px 0;
+  }
+  
+  .footer .btn-learn-more {
+    text-decoration: none;
+    background-color: #ffc107;
+    border-radius: 30px;
+    padding: 8px 30px;
+    border: 2px solid transparent;
+    transition: 0.3s all ease-in-out;
+    font-size: 14px;
+    color: #ffff !important;
+  }
+  
+  .footer .btn-learn-more:hover {
+    border-color: #ffc107;
+    background-color: transparent;
+    color: #ffc107 !important;
+  }
+  
+  .footer .widget .widget-heading {
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 20px;
+  }

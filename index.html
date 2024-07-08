@@ -4,7 +4,413 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BSCS Educational Tour</title>
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendor/bootstrap-5.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="assets/vendor/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Swiper -->
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/img/MR logo.png"/>
 </head>
 <body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><h2>BSCS Educational Tour</h2></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="schedule.html">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="speakers.html">Speakers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="venue.html">Venue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="searchIcon"><i class="fa fa-search"></i></a>
+                        </li>
+                    </ul>
+                    <form class="d-none" id="searchForm">
+                        <input type="text" class="form-control ms-2" placeholder="Search...">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Landing Section -->
+        <section id="intro" class="intro-section">
+            <div class="container pb-5">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2" data-aos="fade-up" data-aos-delay="400">
+                        <div class="swiper init-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/img/img-1.jpeg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/img-2.jpeg" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/img-3.jpeg" alt="Image" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-1">
+                        <h1 class="mb-4" data-aos="fade-up">
+                            Explore, Learn, Innovate
+                        </h1>
+                        <p data-aos="fade-up">
+                            Discover the World of Computer Science
+                        </p>
+                        <p class="mt-5" data-aos="fade-up">
+                            <a href="#feature" class="btn btn-get-started">Get Inspired</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section id="feature" class="feature-section">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Featured Companies</h2>
+                <p>A four-day industry visit</p>
+            </div>
+            <!-- End Section Title -->
+            <div class="container pb-5">
+                <div class="row gy-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
+                            <a href="#" class="thumb d-block"><img src="assets/img/PAGASA.jpg" alt="Image" class="img-fluid rounded"></a>
+                            <div class="post-content">
+                                <div class="meta">
+                                    <a href="#" class="cat">DAY 01</a> •
+                                    <span class="date">June 18, 2024</span>
+                                </div>
+                                <h3><a href="">PAGASA Weather Station</a></h3>
+                                <p>
+                                    Provided us with information regarding aeronautical meteorology, 
+                                    such as gathering weather data using different instruments.
+                                </p>
+            
+                                <div class="d-flex author align-items-center">
+                                    <div class="pic">
+                                        <img src="assets/img/person.png" alt="Image" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="author-name">
+                                        <strong class="d-block">Arnel Gonzales</strong>
+                                        <span class="">PAGASA Weather Station</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
+                            <a href="#" class="thumb d-block"><img src="assets/img/FAA.jpg" alt="Image" class="img-fluid rounded"></a>
+                            <div class="post-content">
+                                <div class="meta">
+                                    <a href="#" class="cat">DAY 01</a> •
+                                    <span class="date">June 18, 2024</span>
+                                </div>
+                                <h3><a href="">First Aviation Academy (FAA)</a></h3>
+                                <p>
+                                    They allowed us to experience the best equipment, 
+                                    like the REDBIRD MCX, to train the next generation of global aviation professionals.
+                                </p>
+            
+                                <div class="d-flex author align-items-center">
+                                    <div class="pic">
+                                        <img src="assets/img/person.png" alt="Image" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="author-name">
+                                        <strong class="d-block">Dave Del Rosario</strong>
+                                        <span class="">FAA Sales and Marketing Staff</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
+                            <a href="#" class="thumb d-block"><img src="assets/img/VTMS.jpg" alt="Image" class="img-fluid rounded"></a>
+                            <div class="post-content">
+                                <div class="meta">
+                                    <a href="#" class="cat">DAY 01</a> •
+                                    <span class="date">June 18, 2024</span>
+                                </div>
+                                <h3><a href="">Vessel Traffic Management System</a></h3>
+                                <p>
+                                    We witnessed how vessels are monitored and tracked with the help of Radar, 
+                                    CCTV, VHF radio, and Automatic Identification System (AIS).
+                                </p>
+            
+                                <div class="d-flex author align-items-center">
+                                    <div class="pic">
+                                        <img src="assets/img/person.png" alt="Image" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="author-name">
+                                        <strong class="d-block">Jerome Saddi</strong>
+                                        <span class="">VTMS Spokeman</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gy-4 pt-5">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
+                            <a href="#" class="thumb d-block"><img src="assets/img/kubo.jpg" alt="Image" class="img-fluid rounded"></a>
+                            <div class="post-content">
+                                <div class="meta">
+                                    <a href="#" class="cat">DAY 02</a> •
+                                    <span class="date">June 19, 2024</span>
+                                </div>
+                                <h3><a href="">QBO Innovation Hub</a></h3>
+                                <p>
+                                    We acquired new skills and strategies for building your project or business 
+                                    with Startup. Also, we learned about entrepreneurship and innovation.
+                                </p>
+            
+                                <div class="d-flex author align-items-center">
+                                    <div class="pic">
+                                        <img src="assets/img/person.png" alt="Image" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="author-name">
+                                        <strong class="d-block">Karla Legaspi</strong>
+                                        <span class="">QBO Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
+                            <a href="#" class="thumb d-block"><img src="assets/img/packetworx.jpg" alt="Image" class="img-fluid rounded"></a>
+                            <div class="post-content">
+                                <div class="meta">
+                                    <a href="#" class="cat">DAY 02</a> •
+                                    <span class="date">June 19, 2024</span>
+                                </div>
+                                <h3><a href="">Packetworx IoT Technology Hub</a></h3>
+                                <p>
+                                    Various inventions of IoT Technology were showcased to us, 
+                                    which are helpful in different aspects, especially in monitoring buildings.
+                                </p>
+            
+                                <div class="d-flex author align-items-center">
+                                    <div class="pic">
+                                        <img src="assets/img/person.png" alt="Image" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="author-name">
+                                        <strong class="d-block">Rose Ann Caraan</strong>
+                                        <span class="">Packetworx Staff</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
+                            <a href="#" class="thumb d-block"><img src="assets/img/LRT.jpg" alt="Image" class="img-fluid rounded"></a>
+                            <div class="post-content">
+                                <div class="meta">
+                                    <a href="#" class="cat">DAY 03</a> •
+                                    <span class="date">June 20, 2024</span>
+                                </div>
+                                <h3><a href="">Light Rail Transit Authority (LRT-2)</a></h3>
+                                <p>
+                                    We went to the LRT Authority Line 2 to explore its system and got the 
+                                    chance to witness how the LRT is maintained and monitored by the authorities. 
+                                </p>
+            
+                                <div class="d-flex author align-items-center">
+                                    <div class="pic">
+                                        <img src="assets/img/person.png" alt="Image" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="author-name">
+                                        <strong class="d-block">Adrian Saldana</strong>
+                                        <span class="">LRT Line-2 Staff</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gy-4 pt-5">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
+                            <a href="#" class="thumb d-block"><img src="assets/img/Museum.jpg" alt="Image" class="img-fluid rounded"></a>
+                            <div class="post-content">
+                                <div class="meta">
+                                    <a href="#" class="cat">DAY 03</a> •
+                                    <span class="date">June 20, 2024</span>
+                                </div>
+                                <h3><a href="">National Museum of Fine Arts</a></h3>
+                                <p>
+                                    Before the day ended, we had the opportunity to visit one of 
+                                    the well-known museums in the Philippines, the National Art Gallery.
+                                </p>
+            
+                                <div class="d-flex author align-items-center">
+                                    <div class="pic">
+                                        <img src="assets/img/person.png" alt="Image" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="author-name">
+                                        <strong class="d-block">Bernadine Bernadino</strong>
+                                        <span class="">Museum Staff</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
+                            <a href="#" class="thumb d-block"><img src="assets/img/98Labs.jpg" alt="Image" class="img-fluid rounded"></a>
+                            <div class="post-content">
+                                <div class="meta">
+                                    <a href="#" class="cat">DAY 04</a> •
+                                    <span class="date">June 21, 2024</span>
+                                </div>
+                                <h3><a href="">98 Labs Inc.</a></h3>
+                                <p>
+                                    We met the CEO of 98 Labs, and he shared his knowledge about 
+                                    software development and experience with us as a programmer.
+                                </p>
+            
+                                <div class="d-flex author align-items-center">
+                                    <div class="pic">
+                                        <img src="assets/img/person.png" alt="Image" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="author-name">
+                                        <strong class="d-block">Brian Tan Seng</strong>
+                                        <span class="">Packetworx Staff</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
+                            <a href="#" class="thumb d-block"><img src="assets/img/Hytec.jpg" alt="Image" class="img-fluid rounded"></a>
+                            <div class="post-content">
+                                <div class="meta">
+                                    <a href="#" class="cat">DAY 04</a> •
+                                    <span class="date">June 21, 2024</span>
+                                </div>
+                                <h3><a href="">Hytec Power Inc.</a></h3>
+                                <p>
+                                    On our last day, this company had a lot of new inventions and innovations, 
+                                    where all the products made for specific fields were more advanced. 
+                                </p>
+            
+                                <div class="d-flex author align-items-center">
+                                    <div class="pic">
+                                        <img src="assets/img/person.png" alt="Image" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="author-name">
+                                        <strong class="d-block">Gretchel Listana</strong>
+                                        <span class="">Hytec Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer light-background">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-3 mb-3 mb-md-0">
+                    <div class="widget">
+                        <h1 class="widget-heading">Thanks to our incredible travel partner, <strong>DJM Travel and Tour Services, Inc.</strong></h1>
+                        <p class="mb-4">
+                            Exploring destinations, creating memories
+                        </p>
+                        <p class="mb-0">
+                            <a href="https://www.instagram.com/djm_mnl/" class="btn-learn-more"><strong>Learn more</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="copyright d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+                <p>© <span>Copyright</span> <strong class="px-1 sitename">BSCS Educational Tour</strong> <span>All Rights Reserved</span></p>
+                <div class="credits">
+                    <p>Designed by: <strong>mr.castelo</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="assets/vendor/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <!-- purecounter -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <!-- jQuery (if needed) -->
+    <script src="assets/vendor/jquery-3.7.1/jquery.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper('.init-swiper', {
+                loop: true,
+                speed: 600,
+                autoplay: {
+                    delay: 5000
+                },
+                slidesPerView: 'auto',
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 40
+                    },
+                    1200: {
+                        slidesPerView: 1,
+                        spaceBetween: 1
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
