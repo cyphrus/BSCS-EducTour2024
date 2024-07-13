@@ -316,9 +316,9 @@
 }
 
 .schedule-section h3 {
-  font-size: 28px;
+  font-size: 16px;
   color: #343a40;
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 20px;
 }
 
@@ -358,6 +358,19 @@
 --------------------------------------------------------------*/
 .speaker {
   background-color: #F4F4F4;
+}
+
+.speaker h2 {
+  font-size: 36px;
+  color: #343a40;
+  font-weight: bold;
+}
+
+.speaker h3 {
+  font-size: 16px;
+  color: #343a40;
+  font-weight: normal;
+  margin-bottom: 20px;
 }
 
 .speaker .speaker {
