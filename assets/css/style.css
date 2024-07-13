@@ -224,6 +224,7 @@
 
 .feature-section .author {
   border-top: 1px solid color-mix(in srgb, #000, transparent 50%);
+  padding-top: 20px;
 }
 
 .feature-section .author .pic {
