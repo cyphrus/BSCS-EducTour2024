@@ -89,8 +89,8 @@
 .intro-section .btn-get-started {
   background-color: #ffc107;
   color: #ffff;
-  border-radius: 30px;
-  padding: 8px 30px;
+  border-radius: 8px;
+  padding: 8px 50px;
   border: 2px solid transparent;
   transition: 0.3s all ease-in-out;
   font-size: 14px;
@@ -280,8 +280,8 @@
 .footer .btn-learn-more {
   text-decoration: none;
   background-color: #ffc107;
-  border-radius: 30px;
-  padding: 8px 30px;
+  border-radius: 8px;
+  padding: 8px 50px;
   border: 2px solid transparent;
   transition: 0.3s all ease-in-out;
   font-size: 14px;
@@ -350,4 +350,79 @@
   .schedule-section .list-group-item {
       font-size: 14px;
   }
+}
+
+/*--------------------------------------------------------------
+# speaker Section
+--------------------------------------------------------------*/
+.speaker {
+  background-color: #F4F4F4;
+}
+
+.speaker .speaker {
+  background-color: #ffff;
+}
+
+.speaker .speaker h3 {
+  font-size: 20px;
+}
+
+.speaker .speaker h3 a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.speaker .speaker .pic {
+  margin-bottom: 30px;
+}
+
+.speaker .speaker .pic img {
+  border-radius: 4px;
+}
+
+.speaker .speaker .position {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: color-mix(in srgb, #000000, transparent 30%);
+}
+
+.speaker p {
+  border-top: 1px solid color-mix(in srgb, #000, transparent 50%);
+  line-height: 1.7;
+  color: #000000;
+}
+
+.speaker .swiper-wrapper {
+  height: auto;
+}
+
+.speaker .swiper-slide {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.speaker .slider-nav a {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  background: #ffc107;
+  border-radius: 50px;
+  transition: 0.2s all ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speaker .slider-nav a i {
+  color: #ffffff;
+}
+
+.speaker .slider-nav a:hover {
+  background-color: color-mix(in srgb, #ffc107 90%, white 15%);
+}
+
+.speaker .slider-nav a:first-child {
+  margin-right: 5px;
 }
